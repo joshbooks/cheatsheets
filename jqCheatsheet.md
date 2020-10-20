@@ -20,4 +20,4 @@ Add a new field to a json object: `js '. + {"field": "value"}'`
 
 Example:
 ```
-cat campaignScratch | jq '. + {memberships: [ { ids: [], limitations: [], placements: [], user_criteria: [], merchant_criteria: [], type: "MEMBERSHIP_ENTITY_TYPE_GLOBAL", promotion: null, created_by: null, created_at: null, id: null }]}'
+cat campaignScratch | jq '.campaign + {memberships: [ { ids: [], limitations: [], placements: [], user_criteria: [], merchant_criteria: [], type: "MEMBERSHIP_ENTITY_TYPE_GLOBAL", promotion: null, created_by: null, created_at: null, id: null }]}'
