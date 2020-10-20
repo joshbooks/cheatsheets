@@ -10,7 +10,9 @@ Delete part of a json object: `jq 'del(.field)'`
 
 Example:
 ```
-cat campaignScratch | jq 'del(.campaign.memberships)'
+cat campaignScratch | jq 'del(.campaign.memberships)' > temp
+rm campaignScratch
+mv temp campaignScratch
 ```
 
 
