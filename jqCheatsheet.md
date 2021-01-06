@@ -16,7 +16,7 @@ mv temp campaignScratch
 ```
 
 
-Add a new field to a json object: `js '. + {"field": "value"}'`
+Add a new field to a json object: `jq '. + {"field": "value"}'`
 
 Example:
 ```
